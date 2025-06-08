@@ -62,3 +62,6 @@ Por ejemplo:
 ## Nota sobre el script de backup
 
 El script `backup_full.sh` se encuentra únicamente en la máquina virtual, en la ruta `/opt/scripts/`, y no forma parte de los archivos entregados en este repositorio. El repositorio solo incluye los directorios comprimidos requeridos y la documentación correspondiente.
+
+## Nota sobre la exportación de directorios de Debian
+El directorio `/proc` no fue comprimido porque es efímero y parcialmente inaccesible. En su lugar, se incluye el archivo `particion.txt` con el contenido de `/proc/partitions`, tal como pide la consigna.
